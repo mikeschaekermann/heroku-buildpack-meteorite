@@ -190,7 +190,7 @@ tar -zxf "$CACHE_DIR"/bundle.tar.gz --strip-components 1 -C "$METEOR_BUILD_DIR"/
 rm "$CACHE_DIR"/bundle.tar.gz
 
 echo "-----> Reinstalling fibers"
-cd $BUILD_DIR/app/.meteor/heroku_build/app/server
+cd "$METEOR_BUILD_DIR"/app/server
 npm uninstall fibers
 npm install fibers
 echo "Fibers reinstalled"
