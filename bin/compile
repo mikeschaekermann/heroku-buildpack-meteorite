@@ -190,7 +190,9 @@ tar -zxf "$CACHE_DIR"/bundle.tar.gz --strip-components 1 -C "$METEOR_BUILD_DIR"/
 rm "$CACHE_DIR"/bundle.tar.gz
 
 echo "-----> Reinstalling fibers"
-cd "$METEOR_BUILD_DIR"/app/server
+cd "$METEOR_BUILD_DIR"/app
+mkdir server
+cd server
 npm uninstall fibers
 npm install fibers
 echo "Fibers reinstalled"
