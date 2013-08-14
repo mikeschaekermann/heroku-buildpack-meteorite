@@ -188,12 +188,6 @@ HOME="$VENDORED_METEOR" "$VENDORED_METEOR"/.meteor/meteor bundle "$CACHE_DIR"/bu
 mkdir -p "$METEOR_BUILD_DIR"/app
 tar -zxf "$CACHE_DIR"/bundle.tar.gz --strip-components 1 -C "$METEOR_BUILD_DIR"/app
 rm "$CACHE_DIR"/bundle.tar.gz
-
-echo "-----> Re-installing fibers"
-cd $BUILD_DIR/app
-npm uninstall fibers
-npm install fibers
-echo "Fibers reinstalled"
 ############################################
 
 ############################################
