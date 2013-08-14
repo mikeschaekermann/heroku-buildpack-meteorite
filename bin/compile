@@ -172,7 +172,7 @@ mkdir -p "$HOME"
 # install meteor + packages through mrt
 # bundle, and install into app/
 ############################################
-cd $BUILD_DIR
+cd $BUILD_DIR/app
 echo "Installing meteor" | indent
 
 # Using different folder to prevent install script form deleting packages file
