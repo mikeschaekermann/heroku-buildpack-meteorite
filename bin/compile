@@ -191,7 +191,7 @@ rm "$CACHE_DIR"/bundle.tar.gz
 
 echo "-----> Reinstalling fibers"
 cd "$METEOR_BUILD_DIR"/app/server
-run_npm "uninstall fibers"
+run_npm "remove fibers"
 run_npm "install fibers@1.0.0 -g"
 echo "Fibers reinstalled"
 ############################################
