@@ -157,8 +157,7 @@ export CPPPATH="$INCLUDE_PATH"
 # run_npm "install --production"
 # run_npm "rebuild"
 # echo "Dependencies installed" | indent
-cd $BUILD_DIR
-run_npm "install rio"
+
 ############################################
 # install meteorite
 ############################################

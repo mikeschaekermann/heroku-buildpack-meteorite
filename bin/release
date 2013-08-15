@@ -6,5 +6,5 @@ cat <<EOF
 addons:
   - mongohq:sandbox
 default_process_types:
-  web: app/.meteor/heroku_build/bin/node startRserve.js
+  web: app/.meteor/heroku_build/bin/node app/.meteor/heroku_build/app/main.js
 EOF
