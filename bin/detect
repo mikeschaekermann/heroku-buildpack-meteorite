@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-if [ -d $1/"$MRT_APP_DIR"/.meteor ]; then
+if [ -d $1/app/.meteor ]; then
   echo "Meteor app" && exit 0
 else
   echo "no" && exit 1

@@ -166,13 +166,13 @@ echo "-----> Installing meteorite with npm"
 run_npm "install meteorite -g"
 echo "Meteorite installed" | indent
 
-METEOR_BUILD_DIR="$BUILD_DIR/$MRT_APP_DIR/.meteor/heroku_build"
+METEOR_BUILD_DIR="$BUILD_DIR/app/.meteor/heroku_build"
 mkdir -p "$HOME"
 ############################################
 # install meteor + packages through mrt
 # bundle, and install into app/
 ############################################
-cd $BUILD_DIR/"$MRT_APP_DIR"
+cd $BUILD_DIR/app
 echo "Installing meteor" | indent
 
 # Using different folder to prevent install script form deleting packages file
